@@ -1,0 +1,79 @@
+.input__holder {
+    margin: 3% auto 3%;
+    position: relative;
+}
+
+.input__label {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 0.5%;
+    margin: 1% 0 0 2%;
+    background-color: transparent;
+    line-height: 120%;
+    font-weight: bold;
+    opacity: 0.5;
+    transform: translate(0, 0);
+    transition: transform 120ms ease-in;
+}
+
+.input__field {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 3px solid #f16249e4;
+    padding: 1.5%;
+    color: #241F32;
+    border-radius: 7px;
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+.input__field:hover {
+    background-color: #fff;
+    border: 3px solid #f16249;
+
+}
+
+.input__field:hover+.input__label {
+    background-color: transparent;
+    opacity: 0.9;
+}
+
+.input__label:hover+.input__field {
+    background-color: #fff;
+    border: 3px solid #f16249;
+}
+
+.input__label:hover {
+    background-color: transparent;
+    opacity: 0.9;
+}
+
+.input__field:focus,
+.input__field:valid {
+    border: 3.5px solid #f16249;
+    outline: none;
+}
+
+.input__field:focus+.input__label,
+.input__field:valid+.input__label {
+    color: #f16249;
+    transform: translate(0rem, -65%) scale(.8);
+    opacity: 1;
+    background-color: #fff;
+    border-radius: 100px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.input__helper {
+    margin-left: 3%;
+    margin-top: 1.5%;
+    color: red;
+    font-size: smaller;
+    font-weight: 700;
+    font-family: math;
+}

@@ -1,0 +1,10 @@
+nav {
+    width: 18%;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    background-color: #F4F3F2;
+    box-shadow: 0px 0px 5px black;
+}

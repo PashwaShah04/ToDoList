@@ -1,0 +1,17 @@
+.heading {
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 40px;
+    font-weight: 800;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-color: #F16249;
+    margin: 0% 2%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}

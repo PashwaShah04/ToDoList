@@ -1,0 +1,28 @@
+.task__holder {
+    position: relative;
+    width: 85%;
+    margin: 10% auto;
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem 0.5rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h4 {
+    margin: 0;
+}
+
+.edit {
+    width: 30%;
+    margin: 0 10%;
+    height: 2rem;
+}
+
+.edit:hover {
+    color: #F16249;
+    filter: brightness(80%);
+    cursor: pointer;
+}

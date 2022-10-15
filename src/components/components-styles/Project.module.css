@@ -1,0 +1,17 @@
+.project {
+    padding: 1rem;
+}
+
+.project:hover {
+    color: #F16249;
+}
+
+.active {
+    background-color: #F16249;
+    color: #F4F3F2;
+}
+
+.active:hover {
+    color: #F4F3F2;
+    filter: brightness(110%);
+}

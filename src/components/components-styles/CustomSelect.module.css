@@ -1,0 +1,147 @@
+.input__holder {
+    margin: 3% auto 3%;
+    position: relative;
+}
+
+.input__label {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 0.5%;
+    margin: 1% 0 0 2%;
+    background-color: transparent;
+    line-height: 120%;
+    font-weight: bold;
+    opacity: 0.5;
+    transform: translate(0, 0);
+    transition: transform 120ms ease-in;
+}
+
+.input__field {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 3px solid #f16249e4;
+    padding: 1.5%;
+    color: #241F32;
+    border-radius: 7px;
+    font-size: medium;
+    font-weight: 600;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.input__field:hover {
+    background-color: #fff;
+    border: 3px solid #f16249;
+
+}
+
+.input__field:hover+.input__label {
+    background-color: transparent;
+    opacity: 0.9;
+}
+
+.input__label:hover+.input__field {
+    background-color: #fff;
+    border: 3px solid #f16249;
+}
+
+.input__label:hover {
+    background-color: transparent;
+    opacity: 0.9;
+}
+
+.input__field:focus,
+.input__field:valid {
+    border: 3.5px solid #f16249;
+    outline: none;
+}
+
+.input__field:valid+.input__label {
+    color: #f16249;
+    transform: translate(0rem, -65%) scale(.8);
+    opacity: 1;
+    background-color: #fff;
+    border-radius: 100px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.input__helper {
+    margin-left: 3%;
+    margin-top: 1.5%;
+    color: red;
+    font-size: smaller;
+    font-weight: 700;
+    font-family: math;
+}
+
+.dropdown__menu {
+    display: block;
+    position: absolute;
+    color: #F16249;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: 140%;
+}
+
+.dropdown__menu li {
+    display: none;
+    align-items: center;
+    background-color: #FFF;
+    padding: 0.5%;
+    border-left: 2px solid #F16249;
+    border-right: 2px solid #F16249;
+}
+
+.input .dropdown__menu__click {
+    z-index: 1;
+    top: 70%;
+    transition: top 400ms ease-in-out;
+    animation: hover__animation 400ms ease-in-out 0s 1;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.input .dropdown__menu__click li {
+    display: block;
+    transform-origin: top center;
+    /* animation: scaleZ 300ms ease-in-out forwards 60ms 1; */
+}
+
+.input .dropdown__menu li:hover {
+    background-color: #F16249;
+    color: #F4F3F2;
+    box-shadow: 1px 0px 5px black;
+    animation: hover__animation 200ms linear 0s 1;
+}
+
+@keyframes hover__animation {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.arrow {
+    border: solid #F16249;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}

@@ -1,0 +1,11 @@
+.holder {
+    padding: 1rem;
+    min-height: 55vh;
+}
+
+h5 {
+    margin: 5% 0;
+    color: red;
+    display: flex;
+    justify-content: center;
+}

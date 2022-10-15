@@ -1,0 +1,38 @@
+.scroll__holder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #f16249;
+    width: 70%;
+    margin: 5% auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.scroll {
+    width: 50%;
+    display: flex;
+    text-decoration: none;
+    color: #241F32;
+    justify-content: center;
+}
+
+.scroll:hover {
+    color: #f16249;
+}
+
+.active {
+    background-color: #F16249;
+    color: #F4F3F2;
+    transform: translate(0,0);
+    transition: transform 120ms ease-in;
+}
+
+.active:hover {
+    color: #F4F3F2;
+    filter: brightness(110%);
+}
+
+.text {
+    margin: 6% auto;
+}

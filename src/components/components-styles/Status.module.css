@@ -1,0 +1,38 @@
+.status__holder {
+    position: relative;
+    background-color: #ea958621;
+    border-radius: 25px;
+    width: 32%;
+    min-height: 30vh;
+}
+
+.status__text {
+    position: absolute;
+    font-weight: 700;
+    left: 5%;
+    color: #241F32
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    padding-top: 1.75rem;
+}
+
+.count {
+    position: absolute;
+    background-color: #f4ffff;
+    border-radius: 10px;
+    padding: 0.25rem 0.6rem;
+    right: 5%;
+    color: #F16249;
+    font-weight: 500;
+}
+
+p {
+    margin: 0;
+}
+
+.icon__style {
+    color: #F16249;
+}
