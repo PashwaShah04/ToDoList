@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect } from 'react'
 import Input from '../components/Input'
 import CustomSelect from '../components/CustomSelect';
-import AppContext from '../Contexts/AppContext';
 import styles from './modal-style/TaskEditModal.module.css'
 import DataService from '../services/data.service';
 
